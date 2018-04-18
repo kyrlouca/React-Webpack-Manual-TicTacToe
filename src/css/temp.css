@@ -1,0 +1,34 @@
+/* can ignore styles below; decorative only */
+.mid {
+  display: grid;
+  grid-template-columns: minmax(20px, auto) 1fr repeat(3, minmax(30px, auto));
+  grid-auto-rows: minmax(20px, auto);
+  grid-gap: 4px;
+  align-items: flex-start;
+}
+
+.mid {
+  background-color: lightyellow;
+  border: 2px solid black;
+  padding: 10px;
+}
+.mid > div {
+  background-color: lightgreen;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* padding:30px; */
+}
+
+#ll {
+  background-color: blue;
+  color: white;
+
+  /* font-size: 20px; */
+}
+.redTemp{
+  background: red;
+  font-size: 100px;
+}

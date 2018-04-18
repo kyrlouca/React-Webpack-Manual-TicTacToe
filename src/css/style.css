@@ -1,0 +1,130 @@
+:root {
+  font-size: 15px;
+}
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: red;
+}
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50px minmax(200px ,3fr) repeat(3 ,1fr) minmax(200px,1fr);
+  grid-template-rows: 80px 1fr 100px;
+  grid-template-areas:
+    'h h h h h h'
+    'a l l l l l'
+    'f f f f f f';
+  background: khaki;
+
+  /* ******************* */
+  /* Header */
+  /* ******************* */
+}
+header {
+  grid-area: h;
+  position:relative;
+  font-size: 60px;
+  background: rgb(255, 255, 255);
+  color: balck;
+  font-family: Avenir , ' Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+  /* display:grid; */
+  /* grid-template-columns: 1fr 180px;   */
+  /* justify-items:right; */
+
+
+}
+.title{
+  position:relative;
+  text-align: center;
+  align-items: center;
+  font-size: 1em;
+}
+
+nav{
+  position:absolute;
+  top:0;
+  right:0;
+  z-index:10;
+  
+  background: blue;
+  font-size: 0.25em ;
+  height:100%;
+  
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+  
+}
+nav i{
+padding-top: 10px;
+}
+/* ******************* */
+/* Main */
+/* ******************* */
+
+.main{
+  position:relative;
+  background: rgb(228, 151, 177);
+  grid-area:l;
+  display:grid;
+  align-content: center;
+  justify-content: center;
+}
+  
+aside{
+  grid-area:a;
+  background: rgb(157, 157, 226);  
+  padding: 3px 0 3px 3px;  
+
+}
+.gridBox{
+  background: rgb(105, 95, 182);
+  display:grid;
+  grid-template-columns: repeat(3,minmax(30px,10vw));
+  grid-template-rows: repeat(3,minmax(20px,10vw));
+  grid-gap:2px;
+  justify-content: space-around;
+  
+}
+.gridBox div{
+  margin:1px;
+  /* background:blue; */
+  border: solid 2px black;
+  border-radius: 12px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* ******************* */
+/* Footer*/
+/* ******************* */
+
+
+footer{
+  grid-area: f;
+  font-size: 60px;
+  background:rgb(255, 255, 255);
+  color:balck;
+  font-family:  Avenir',
+    'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+}
+/* ************************************** */
+.red{
+  background:red;
+}
+.blue{
+  background:navy;
+  color: white;
+}
+.gray{
+  background:lightgray;
+}

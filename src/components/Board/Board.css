@@ -1,0 +1,152 @@
+
+body {
+  background:salmon;
+}
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50px minmax(200px ,3fr) repeat(3 ,1fr) minmax(200px,1fr);
+  grid-template-rows: 80px 1fr 100px;
+  grid-template-areas:
+    'h h h h h h'
+    'a l l l l l'
+    'f f f f f f';
+  background: khaki;
+
+  /* ******************* */
+  /* Header */
+  /* ******************* */
+}
+header {
+  grid-area: h;
+  position:relative;
+  font-size: 60px;
+  background: rgb(255, 255, 255);
+  color: balck;
+  
+}
+.title{
+  position:relative;
+  text-align: center;
+  align-items: center;
+  font-size: 1em;
+}
+
+nav{
+  position:absolute;
+  top:0;
+  right:0;
+  z-index:10;
+  
+  background: blue;
+  font-size: 0.25em ;
+  height:100%;
+  
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+  
+}
+nav i{
+padding-top: 10px;
+}
+/* ******************* */
+/* Main */
+/* ******************* */
+
+.main{
+  grid-area:l;
+  /* position:relative; */
+  background: rgb(228, 151, 177);  
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.player{
+  width:200px;
+}
+  
+aside{
+  grid-area:a;
+  background: rgb(157, 157, 226);  
+  padding: 3px 0 3px 3px;  
+
+}
+.gridBox{
+  background: rgb(105, 95, 182);
+  display:grid;
+  grid-template-columns: repeat(3,minmax(30px,10vw));
+  grid-template-rows: repeat(3,minmax(20px,10vw));
+  grid-gap:2px;
+  justify-content: space-around;
+  
+}
+.gridBox div{
+  margin:1px;
+  /* background:blue; */
+  border: solid 2px black;
+  border-radius: 12px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* ******************* */
+/* Footer*/
+/* ******************* */
+
+
+footer{
+  grid-area: f;
+  font-size: 10px;
+  background:rgb(255, 255, 255);
+  color:balck;
+  font-family:  'Avenir'
+    
+}
+ 
+footer .buttons{
+  margin:20px;
+}
+
+footer .message{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  margin: 0;
+  padding:0;
+
+}
+footer .message > p{
+  font-family:  Roboto, Oxygen;
+  font-size: 40px;
+  background: yellow;
+  color: red;
+
+}
+/* ************************************** */
+.red{
+  background:red;
+}
+.blue{
+  background:navy;
+  color: white;
+}
+.gray{
+  background:lightgray;
+}
+
+.img1{
+  /* background: url('../image/webpack1.png'); */
+  background:red;
+}
+.mm{
+  color:blue;
+  font-size: 10px;
+}
+.xx{
+  font-size:20px;
+}

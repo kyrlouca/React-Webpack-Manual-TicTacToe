@@ -1,0 +1,15 @@
+.gridBox{
+  background: rgb(105, 95, 182);
+  display:grid;
+  grid-template-columns: repeat(3,minmax(30px,10vw));
+  grid-template-rows: repeat(3,minmax(20px,10vw));
+  grid-gap:2px;
+  justify-content: space-around;
+ }
+.redG{
+  background:blue;
+  
+}
+.bigF{
+  font-size: 40px;
+}
